@@ -8,10 +8,21 @@
 <body>
     
     <img src="./imgs/memecoin 6th sense.png" alt="" class="titlelogo">
-    
     <button class="btn" id="startBtn" onclick="startGame()"> Click to start </button>
+    
     <div id="game">
-        
+                
+        <div class="container hidden" id="coinSlotsContainer">
+            <div id="coinContainer">
+                <img src="" alt="" class="logobox" id="slot1Logo" onclick="chooseA()">
+                <h2 class="logoText" id="coin1Name"></h2>
+            </div>
+            <div id="coinContainer">
+                <img src="" alt="" class="logobox" id="slot2Logo" onclick="chooseB()">
+                <h2 class="logoText" id="coin2Name"></h2>
+            </div>
+        </div>
+
         <div class="hidden grid" id="topLogoBar">
             <img src="" alt="" class="smallLogoBox" id="coin0Logo">
             <h1 class="coinInfo displayNone" id="coin0Info"></h1>
@@ -43,17 +54,7 @@
             <img src="" alt="" class="smallLogoBox" id="coin9Logo">
             <h1 class="coinInfo displayNone" id="coin9Info"></h1>
         </div>
-        
-        <div class="container hidden" id="coinSlotsContainer">
-            <div id="coinContainer">
-                <img src="" alt="" class="logobox" id="slot1Logo" onclick="chooseA()">
-                <h2 class="logoText" id="coin1Name"></h2>
-            </div>
-            <div id="coinContainer">
-                <img src="" alt="" class="logobox" id="slot2Logo" onclick="chooseB()">
-                <h2 class="logoText" id="coin2Name"></h2>
-            </div>
-        </div>
+
         <div class="displayNone" id="endgame">
             <div class="container" id="Scoreboard">
                 <h1>Prediction Accuracy</h1>
