@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+    
+    <img src="./imgs/memecoin 6th sense.png" alt="" class="titlelogo">
+    
+    <button class="btn" id="startBtn" onclick="startGame()"> Click to start </button>
+    <div id="game">
+        
+        <div class="hidden grid" id="topLogoBar">
+            <img src="" alt="" class="smallLogoBox" id="coin0Logo">
+            <h1 class="coinInfo displayNone" id="coin0Info"></h1>
+    
+            <img src="" alt="" class="smallLogoBox" id="coin1Logo">
+            <h1 class="coinInfo displayNone" id="coin1Info"></h1>
+    
+            <img src="" alt="" class="smallLogoBox" id="coin2Logo">
+            <h1 class="coinInfo displayNone" id="coin2Info"></h1>
+    
+            <img src="" alt="" class="smallLogoBox" id="coin3Logo">
+            <h1 class="coinInfo displayNone" id="coin3Info"></h1>
+    
+            <img src="" alt="" class="smallLogoBox" id="coin4Logo">
+            <h1 class="coinInfo displayNone" id="coin4Info"></h1>
+    
+            <img src="" alt="" class="smallLogoBox" id="coin5Logo">
+            <h1 class="coinInfo displayNone" id="coin5Info"></h1>
+    
+            <img src="" alt="" class="smallLogoBox" id="coin6Logo">
+            <h1 class="coinInfo displayNone" id="coin6Info"></h1>
+    
+            <img src="" alt="" class="smallLogoBox" id="coin7Logo">
+            <h1 class="coinInfo displayNone" id="coin7Info"></h1>
+    
+            <img src="" alt="" class="smallLogoBox" id="coin8Logo">
+            <h1 class="coinInfo displayNone" id="coin8Info"></h1>
+            
+            <img src="" alt="" class="smallLogoBox" id="coin9Logo">
+            <h1 class="coinInfo displayNone" id="coin9Info"></h1>
+        </div>
+        
+        <div class="container hidden" id="coinSlotsContainer">
+            <div id="coinContainer">
+                <img src="" alt="" class="logobox" id="slot1Logo" onclick="chooseA()">
+                <h2 class="logoText" id="coin1Name"></h2>
+            </div>
+            <div id="coinContainer">
+                <img src="" alt="" class="logobox" id="slot2Logo" onclick="chooseB()">
+                <h2 class="logoText" id="coin2Name"></h2>
+            </div>
+        </div>
+        <div class="displayNone" id="endgame">
+            <div class="container" id="Scoreboard">
+                <h1>Prediction Accuracy</h1>
+                <div id="predictionAccuracy">
+                    <h2>4hr:</h2>
+                    <h2></h2>
+                    <h2>24hr:</h2>
+                    <h2></h2>
+                    <h2>MCAP:</h2>
+                    <h2></h2>
+                </div>
+                <table id="Scoreboard-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Your Rank </h1></th>
+                            <th>4hr Rank <h1 class="displayNone" id="4hrRankList"></h1></th>
+                            <th>24hr Rank <h1 class="displayNone" id="24hrRankList"></h1></th>
+                            <th>Mcap Rank <h1 class="displayNone" id="mcapRankList"></h1></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table rows will be dynamically added using JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+<script src="App.js"></script>
+</html>
